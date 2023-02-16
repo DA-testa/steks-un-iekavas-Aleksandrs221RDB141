@@ -32,13 +32,13 @@ def find_mismatch(text):
 def main():
     text = input()
     print(f"input: {text}")
-    if "F" in text.upper :
+    if "F" in text :
         for i in range(0,6,1):
             with open(f"test/{i}") as f:
                 text = f.read()
                 mismatch = find_mismatch(text)
                 print(mismatch)
-    elif "I" in text.upper:
+    elif "I" in text:
         text = input()
         mismatch = find_mismatch(text)
         print(mismatch)
